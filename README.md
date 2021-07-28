@@ -1,2 +1,2 @@
-# googlesearch_clone
-This is my attempt to clone google's search webpage. It still needs some modifications.
+# Google Search Clone
+A simple Google Search Clone, made with HTML and the awesome Tailwind CSS
