@@ -3,31 +3,30 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width=device-width">
-        <link rel = "stylesheet" href="styling.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/154dc9bcbd.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <nav id = "top_nav">
-       <div id = "horizontal_navbar">
-            <ul>
-                <li><a href = "https://www.google.co.in/imghp">Images</a></li>
-                <li><a href = "https://www.google.com/gmail">Gmail</a></li>
-            </ul>
+    <body class = "bg-gray-700">l̥
+       <div class = "flex flex-column md:flex-row justify-end">
+                <div class="px-5 text-white hover:bg-gray-600 hover:border rounded"><a href = "https://www.google.co.in/imghp">Images</a></div>
+                <div class="px-5 text-white hover:bg-gray-600 hover:border rounded"><a href = "https://www.google.com/gmail">Gmail</a></div>
+                <div class="px-5 text-white hover:bg-gray-600 hover:border rounded"><i class="fab fa-google"></i></div>
+                <div class="px-5 text-white hover:bg-gray-600 hover:border rounded"><i class="far fa-user"></i></div>
         </div>
-    </nav>
-        <div id = "main_elements">
-            <img src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class = "g_image" >
-            <input type = "text" placeholder = "Search Google or type a URL" id="search-box"> 
-            <button type = "submit" id = "se_button">Search</button>
-        </div>
-        <nav id = "bottom_nav">
-            <div id = "bot_hor_navbar">
-                <ul>
-                    <li><a href = "https://www.google.com/intl/en_in/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertisments</a></li>
-                    <li><a href = "https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a> </li>
-                    <li><a href = "https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
-
-                </ul>
+        <div>
+            <div class="pt-40 pb-10 grid justify-center">
+                <img src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
-        </nav>
+            <div class = "flex flex-row justify-center items-center">
+                <div class="px-5 rounded-l-full p-2 bg-white cursor-pointer"><i class="fas fa-search"></i></div>
+                <input class = "p-2 w-3/6 md:w-2/6 text-center focus:outline-none" type = "text" placeholder = "Search Google or type a URL">
+                <div class="px-5 rounded-r-full p-2 bg-white cursor-pointer"><i class="fas fa-microphone"></i></div>
+            </div>
+            <div class="p-10 grid justify-center">
+                <div class="m-auto rounded-full h-14 w-14 flex items-center justify-center bg-gray-900"><i class="fas fa-plus text-gray-400"></i></div>
+                <p class="pt-5 text-white text-sm">Add shortcut</p>
+            </div>    
+        </div>
+        
     </body>
    </html>
